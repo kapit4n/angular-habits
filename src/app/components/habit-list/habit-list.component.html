@@ -1,0 +1,10 @@
+<mat-list>
+  <mat-list-item *ngFor="let habit of habits">
+    <img matListAvatar [src]="habit.img" alt="...">
+    <h3 matLine> {{habit.name}} </h3>
+    <p matLine>
+      <span> {{habit.name}} </span>
+      <span class="demo-2"> -- {{habit.description}} </span>
+    </p>
+  </mat-list-item>
+</mat-list>

@@ -1,0 +1,21 @@
+  <p>
+    DONE: ({{shoes.selectedOptions.selected.length}})
+  </p>
+
+    <mat-selection-list #shoes>
+      <mat-list-option *ngFor="let habit of habits">
+        <mat-grid-list cols="8" rowHeight="2:1">
+          <mat-grid-tile>        
+            <mat-icon>
+              <img [src]="habit.img" width="40" height="40">
+            </mat-icon>
+          </mat-grid-tile>
+          <mat-grid-tile colspan="7">
+            <p>
+              <span> {{habit.name}} </span>
+            </p>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-list-option>
+    </mat-selection-list>
+    
